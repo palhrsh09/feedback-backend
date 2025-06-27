@@ -7,10 +7,9 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: '*', 
+  origin: ['http://localhost:5173', 'https://your-frontend-app.vercel.app'], // Add your Vercel frontend domain here when deployed
   credentials: true,
 }));
-
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI, {
