@@ -1,13 +1,13 @@
 AI Feedback API (Backend)
 This Node.js Express API provides AI-generated feedback and stores it in MongoDB.
 
-🚀 Deployment
+Deployment
 Deployed on Render.
 
-💻 Technologies Used
+Technologies Used
 Node.js, Express.js, Mongoose, MongoDB Atlas, Gemini API (gemini-2.0-flash), dotenv, cors.
 
-✨ Features
+Features
 AI Feedback Generation: Uses Gemini 2.0 Flash for constructive text feedback.
 
 Data Persistence: Stores user input and AI feedback in MongoDB.
@@ -16,10 +16,10 @@ History Retrieval: Fetches past feedback entries.
 
 Structured Architecture: Controller-Service pattern.
 
-🧠 Gemini Integration
+Gemini Integration
 Integrates with Gemini 2.0 Flash via fetch API call; GEMINI_API_BASE_URL and GEMINI_API_KEY are managed via environment variables.
 
-⚙️ Local Setup
+Local Setup
 To run locally:
 
 Navigate to the server directory:
@@ -53,7 +53,7 @@ npm start
 
 API runs on http://localhost:5000.
 
-📊 API Endpoints
+API Endpoints
 POST /api/feedback
 
 Description: Generates and saves AI feedback.
@@ -68,5 +68,5 @@ Description: Retrieves all stored feedback history.
 
 Response: [{"_id": "...", "userInput": "Text 1", "feedback": "Feedback 1", "timestamp": "ISO Date"}]
 
-🔒 CORS Configuration
-CORS middleware allows cross-origin requests. Configured for http://localhost:5173 locally; update for production domain.
+CORS Configuration
+CORS middleware allows cross-origin requests. Configured for http://localhost:5173 locally; update for production domain
