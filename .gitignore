@@ -1,0 +1,46 @@
+# Node.js specific ignores
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+*.tgz
+.npm/
+.eslintcache
+.prettierignore
+.prettierrc.json
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+*.tmp
+*.bak
+
+# Editor and OS specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test results
+junit.xml
+test-results.xml
+
+# Compiled output (if your server generates any specific build artifacts)
+build/
+dist/
+
+# Dependency lock files (if you prefer them to be ignored within the server folder)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
